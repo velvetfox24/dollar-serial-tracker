@@ -20,13 +20,19 @@ A collaborative application for tracking and valuing paper money collections. Bu
 
 ## Installation
 
-1. Clone the repository:
+1. Install system dependencies (for Debian/Ubuntu/Kali):
+```bash
+sudo apt update
+sudo apt install -y python3-dev python3-pip python3-venv libzbar0 libzbar-dev build-essential libgl1-mesa-glx
+```
+
+2. Clone the repository:
 ```bash
 git clone https://github.com/velvetfox24/dollar-serial-tracker
 cd dollar-serial-tracker
 ```
 
-2. Create and activate a virtual environment (recommended):
+3. Create and activate a virtual environment (recommended):
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Linux/macOS
@@ -34,23 +40,30 @@ source venv/bin/activate  # On Linux/macOS
 .\venv\Scripts\activate  # On Windows
 ```
 
-3. Install dependencies:
+4. Upgrade pip and install wheel:
+```bash
+pip install --upgrade pip
+pip install wheel
+```
+
+5. Install Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Required Dependencies
 
-The following packages are required and will be installed automatically:
+The following packages will be installed automatically:
 
-- PyQt6 (6.4.0 or higher) - GUI framework
-- requests (2.28.0 or higher) - HTTP client
-- beautifulsoup4 (4.11.0 or higher) - Web scraping
-- opencv-python (4.7.0 or higher) - Image processing
-- numpy (1.23.0 or higher) - Numerical computing
-- pillow (9.3.0 or higher) - Image processing
-- pyzbar (0.1.9 or higher) - Barcode scanning
-- cryptography (38.0.0 or higher) - Security features
+- PyQt6 (6.6.1) - GUI framework
+- requests (2.31.0) - HTTP client
+- beautifulsoup4 (4.12.2) - Web scraping
+- opencv-python (4.9.0.80) - Image processing
+- numpy (1.24.3) - Numerical computing
+- Pillow (10.1.0) - Image processing
+- pyzbar (0.1.9) - Barcode scanning
+- cryptography (41.0.7) - Security features
+- Additional supporting libraries
 
 ## First-Time Setup
 
