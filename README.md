@@ -20,11 +20,16 @@ A collaborative application for tracking and valuing paper money collections. Bu
 
 ## Installation
 
-1. Install system dependencies (for Debian/Ubuntu/Kali):
+1. Install system dependencies (for Kali Linux):
 ```bash
 sudo apt update
-sudo apt install -y python3-dev python3-pip python3-venv libzbar0 libzbar-dev build-essential libgl1-mesa-glx
+sudo apt install -y python3-dev python3-pip python3-venv libzbar-dev build-essential qt6-base-dev
 ```
+
+For other distributions:
+- Ubuntu/Debian: `sudo apt install -y python3-dev python3-pip python3-venv libzbar0 libzbar-dev build-essential libgl1-mesa-glx`
+- Fedora: `sudo dnf install -y python3-devel python3-pip python3-virtualenv zbar zbar-devel gcc gcc-c++ mesa-libGL`
+- Arch Linux: `sudo pacman -S python-pip python-virtualenv zbar base-devel mesa`
 
 2. Clone the repository:
 ```bash
